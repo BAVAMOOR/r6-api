@@ -300,6 +300,7 @@ foreach($idresponse["players"] as $value) {
 }
 
 header("Content-Type: application/json");
+header("Access-Control-Allow-Origin: *");
 
 if (array_key_exists("season", $data))
 	echo $data["season"];
